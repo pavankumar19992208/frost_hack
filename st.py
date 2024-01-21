@@ -97,20 +97,20 @@ def main():
         <h2>Security</h2>
         <p>Cloud Fare</p>
         <h2>DNS</h2>
-        <p>Porkbun Through Godaddy</p>
+        <p>Porkbun Through <b>Godaddy<b></p>
         <h2>Testing Purpose Credentials</h2>
-        <p><b>User1:</b></p>
+        <p><b>[User-1]:</b></p>
         <p>Username: 9182442102</p>
         <p>Password: 1234</p>
-        <p><b>User2:</b></p>
+        <p><b>[User-2]:</b></p>
         <p>Username: 987654321</p>
         <p>Password: 4321</p>
-        <p> kindly spend some to to read this to understand our product (sry algorithm)</P>
-        <p>just Login -> choose your apparel from wardrobe and grab your matchings.</p>
-        <p> user can upload their existing apparel to their ward robe</p>
-        <p> where we know " the more dataset the more efficiency and accuracy", this approach helps ecommerce platforms to make their recommendations more efficient by using their ward robe</p>
-        <p> you wanna attend marraige get the perfect match of pant for your shirt in the wardrobe</p> 
-        <p><i>Note: Don't concentrate on frontend, this project mainly concentrates on the algorithm to find matchings for their wardrobe.</i></p>
+        <h3>Kindly spend some time to read this for understanding our product (sorry algorithm)</h3>
+        <p>Just Login -> Choose your best apparel from wardrobe and grab your matchings.</p>
+        <p> Users can upload their existing apparel to their wardrobe</p>
+        <p> As we know "the larger the dataset, the higher the efficiency and accuracy", this approach assists <b>E-commerce platforms<b> to provide better personalization of the wardrobe</p>
+        <p> you wanna attend a marriage, get the perfect match of pants for your shirt from the wardrobe</p> 
+        <p><i>Note: Don't concentrate on frontend, this project mainly concentrates on the algorithm to find exquisite outfits for their wardrobe.</i></p>
     </div>
     ''',
     unsafe_allow_html=True
