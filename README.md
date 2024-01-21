@@ -20,6 +20,7 @@ Our solution simplifies your morning routine, encourages creative styling, and e
  3. Cloud Deployment models: Streamlit Sharing
  4. SSL/TLS encryption: Cloudflare.
  5. Hosting Platform: GoDaddy
+ 6. Backend Engine: Machine Learning and Tensorflow
 
 
 ### How It Works 🤖
