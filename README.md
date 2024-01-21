@@ -14,6 +14,13 @@ FashionRobe employs a sophisticated machine learning model to deliver custom out
 
 Our solution simplifies your morning routine, encourages creative styling, and empowers you to make confident fashion choices daily.
 
+ ## Tech stacks used:   
+ 1. Programming Languages: Python
+ 2. Database: Mongodb Atlas
+ 3. Cloud Deployment models: Streamlit Sharing
+ 4. SSL/TLS encryption: Cloudflare.
+ 5. Hosting Platform: GoDaddy
+
 ### How It Works 🤖
 
 1. **User Profiles**: Our users, like `username-987654321`, who prefers minimalist styles, and `username-9182442102`, who loves bold patterns, input their preferences and wardrobe details.
