@@ -130,39 +130,37 @@ def main():
                 st.success("Wardrobe Updated")#1
                 st.session_state.images = None
                 st.experimental_rerun()
-        if st.button("Wardrobe", key="wardrobe_button"):#2
+        selected_images = []
+        if st.button("Wardrobe", key="wardrobe_button"):
             st.session_state.images = get_images_from_mongo(client, "fashion", "fashion_", st.session_state.current_user["_id"])
+        
         if st.session_state.images:
-            # Display images with selection option
-            selected_images = []
-            for image in st.session_state.images:
-                if st.checkbox("Select", key=image):
-                    selected_images.append(image)
-                st.image(image, use_column_width=True)#2
-        # if st.session_state.images:
-        #     cols_per_row = 3
-        #     for i in range(0, len(st.session_state.images), cols_per_row):
-        #         cols = st.columns(cols_per_row)
-        #         for j in range(cols_per_row):
-        #             if i + j < len(st.session_state.images):
-        #                 with cols[j]:
-        #                     st.image(st.session_state.images[i + j], use_column_width=True)
-            if selected_images:
-                if st.button("Recommend", key="recommend_button"):
-                    # Placeholder for sending selected images to backend and receiving recommendations
-                    recommended_items = send_images_to_backend(selected_images)  # Define this function to interact with your backend
-                    st.write("Recommended Items")
-                    for item in recommended_items:
-                        st.image(item, use_column_width=True)
+            cols_per_row = 3
+            for i in range(0, len(st.session_state.images), cols_per_row):
+                cols = st.columns(cols_per_row)
+                for j in range(cols_per_row):
+                    index = i + j
+                    if index < len(st.session_state.images):
+                        with cols[j]:
+                            # Display checkbox with each image
+                            if st.checkbox(f"Select Image {index}", key=f"select_{index}"):
+                                selected_images.append(st.session_state.images[index])
+                            st.image(st.session_state.images[index], use_column_width=True)
+        
+        if selected_images:
+            if st.button("Recommend", key="recommend_button"):
+                recommended_items = send_images_to_backend(selected_images)  # Implement this function as required
+                st.write("Recommended Items")
+                for item in recommended_items:
+                    st.image(item, use_column_width=True)
+
+
 def send_images_to_backend(selected_images):
     # Placeholder function for sending images to backend and getting recommendations
     # You'll need to define how to send these images and process the response
     # This is a dummy function and should be replaced with actual implementation
     recommended_items = []  # Replace with actual response from backend
     return recommended_items
-
-
-
 
 
 if __name__ == "__main__":
