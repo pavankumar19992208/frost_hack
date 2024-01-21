@@ -21,6 +21,7 @@ Our solution simplifies your morning routine, encourages creative styling, and e
  4. SSL/TLS encryption: Cloudflare.
  5. Hosting Platform: GoDaddy
 
+
 ### How It Works 🤖
 
 1. **User Profiles**: Our users, like `username-987654321`, who prefers minimalist styles, and `username-9182442102`, who loves bold patterns, input their preferences and wardrobe details.
