@@ -105,7 +105,11 @@ def main():
         <p><b>User2:</b></p>
         <p>Username: 987654321</p>
         <p>Password: 4321</p>
-        <p>Login, choose your apparel from wardrobe and grab your matchings.</p>
+        <p> kindly spend some to to read this to understand our product (sry algorithm)</P>
+        <p>just Login -> choose your apparel from wardrobe and grab your matchings.</p>
+        <p> user can upload their existing apparel to their ward robe</p>
+        <p> where we know " the more dataset the more efficiency and accuracy", this approach helps ecommerce platforms to make their recommendations more efficient by using their ward robe</p>
+        <p> you wanna attend marraige get the perfect match of pant for your shirt in the wardrobe</p> 
         <p><i>Note: Don't concentrate on frontend, this project mainly concentrates on the algorithm to find matchings for their wardrobe.</i></p>
     </div>
     ''',
